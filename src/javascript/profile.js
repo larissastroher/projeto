@@ -1,4 +1,4 @@
-const API_URL = "http://localhost/landingpage/API_landingpage_cities/backend/api"
+const API_URL = "https://rstrip.infinityfreeapp.com/api"
     
 document.addEventListener('DOMContentLoaded', async function() {
     const token = localStorage.getItem('authToken');

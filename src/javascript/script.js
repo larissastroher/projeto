@@ -1,4 +1,4 @@
-const API_URL = "http://localhost/landingpage/API_landingpage_cities/backend/api"
+const API_URL = "https://rstrip.infinityfreeapp.com/api"
 let currentUserId = null;
 
 $(document).ready(function() {
