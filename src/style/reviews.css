@@ -1,0 +1,155 @@
+#review-area {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 40px;
+}
+
+#review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#review-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#review-form label {
+    font-weight: 600;
+    color: #333;
+}
+
+#review-form input,
+#review-form select,
+#review-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#review-form input:focus,
+#review-form select:focus,
+#review-form textarea:focus {
+    outline: none;
+    border-color: #4b6b47;
+}
+
+#review-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#review-form button[type="submit"] {
+    align-self: flex-start; 
+    padding: 12px 25px;
+    color: #fff;
+    background-color: #4b6b47 !important;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#review-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#review-feedback {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.login-prompt {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.login-prompt h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.login-prompt p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.login-prompt .btn-default {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#reviews-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.review-card-user {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1d1d1d;
+}
+
+.review-card-rating {
+    color: #f5b32e; /* Cor de estrela */
+    font-size: 1rem;
+}
+
+.review-card-body {
+    color: #333;
+    line-height: 1.6;
+}
+
+.review-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 10px;
+}
+
+.delete-review-btn {
+    background-color: transparent;
+    border: none;
+    color: #d9534f;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.delete-review-btn:hover {
+    background-color: #f2dede;
+}

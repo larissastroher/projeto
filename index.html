@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="src/style/style.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <title>RSTRIP</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-suitcase" id="nav_logo"> rstrip</i>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cidades</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <ul id="auth_list">
+                <li class="nav-item" id="login-link-li">
+                    <a href="login.html" class="btn-default">Login</a>
+                </li>
+                <li class="nav-item hidden" id="profile-link-li">
+                    <a href="conta.html" class="btn-default">Meu Perfil</a>
+                </li>
+                <li class="nav-item hidden" id="logout-link-li">
+                    <a href="#" id="logout-btn" class="btn-default">Sair</a>
+                </li>
+            </ul>
+            
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars "></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cidades/a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                LOGIN
+            </button>
+        </div>
+  
+    </header>
+
+<main id="content">
+    <section id="home">
+        <div class="shape"></div>
+       <div id="cta">
+        <h1 class="title">
+            Lugares para conhecer no 
+            <span>RS</span>
+        </h1>
+
+        <p class="description">
+          O Rio Grande do Sul é um estado que encanta por sua diversidade cultural, gastronômica e paisagens únicas. Conhecido por suas raízes gaúchas e forte influência europeia, oferece destinos que agradam a todos os estilos de viajantes.
+        </p>
+
+        <div id="cta_buttons">
+
+    <a href="tel:+51999999997" id="phone_button">
+        <button class="btn-default">
+            <i class="fa-solid fa-phone"></i>
+        </button>
+        (51) 99999-9997
+    </a>
+</div>
+
+<div class="social-media-buttons">
+    <a href="">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/larissastroher?igsh=MWJ3NjAyZnhzdXlmdw==">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com/share/1CSvvmpxj4/?mibextid=kFxxJD">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+</div>
+       </div> 
+
+<div id="banner">
+<img src="src/images/imgcentral.png" alt="">
+</div>
+
+    </section>
+
+<section id="menu">
+    <h2 class="section-title">Cidades</h2>
+    <h3 class="section-subtitle">Pricipais sugestões</h3>
+
+    <div id="dishes">
+        
+
+    </div>
+</section>
+
+
+
+<section id="testimonials"> <div id="review-area">
+        </div>
+
+    <h2 class="section-title">O que dizem nossos viajantes</h2>
+    <div id="reviews-list-container">
+        </div>
+</section>
+
+
+
+</main>
+
+<footer>
+    <img src="src/images/wave.svg" alt="">
+
+    <div id="footer_items">
+        <sapn id="copyright">
+            &copy 2025 Larissa Stroher
+        </sapn>
+
+        <div class="social-media-buttons">
+            <a href="">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/larissastroher?igsh=MWJ3NjAyZnhzdXlmdw==">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1CSvvmpxj4/?mibextid=kFxxJD">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </div>
+               </div> 
+
+    </div>
+</footer>
+
+    <script src="src/javascript/script.js"></script>
+    
+</body>
+</html>
