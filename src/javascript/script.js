@@ -57,6 +57,11 @@ $(document).ready(function() {
       $.ajax({
           url: `${API_URL}/cities.php`,
           method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          mode: 'cors',
+          credentials: 'omit',
           dataType: 'json',
           success: function(response) {
               $('#dishes').empty();
