@@ -405,4 +405,32 @@ $('body').on('click', '.delete-review-btn', function() {
         }
     });
 
+
+    console.log("=== INICIANDO TESTE DE CONEXÃO ===");
+
+    fetch('https://rstrip.infinityfreeapp.com/api/cities.php', {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        console.log("Status da resposta:", response.status);
+        console.log("Headers da resposta:");
+        response.headers.forEach((value, key) => {
+            console.log(`  ${key}: ${value}`);
+        });
+        return response.json();
+    })
+    .then(data => {
+        console.log("=== DADOS RECEBIDOS ===");
+        console.log(data);
+    })
+    .catch(error => {
+        console.error("=== ERRO ===");
+        console.error(error);
+    });
+
+
+
 });
