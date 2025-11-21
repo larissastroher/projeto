@@ -57,12 +57,11 @@ $(document).ready(function() {
       $.ajax({
           url: `${API_URL}/cities.php`,
           method: 'GET',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          mode: 'cors',
-          credentials: 'omit',
           dataType: 'json',
+          crossDomain: true,
+          xhrFields: {
+            withCredentials: false,
+          },
           success: function(response) {
               $('#dishes').empty();
 
@@ -88,7 +87,11 @@ $(document).ready(function() {
                   $('#dishes').html('<p>Nenhuma cidade encontrada.</p>');
               }
           },
-          error: function(error) {
+          error: function(xhr, status, error) {
+            console.error("Erro completo:", xhr);
+            console.error("Status:", status);
+            console.error("Erro:", error);
+            console.error("Response:", xhr.responseText);
               console.error("Erro ao buscar cidades:", error);
               $('#dishes').html('<p>Ocorreu um erro ao carregar as cidades. Tente novamente mais tarde.</p>');
           }
@@ -280,6 +283,10 @@ function populateCitySelect() {
         url: `${API_URL}/cities.php`,
         method: 'GET',
         dataType: 'json',
+        crossDomain: true,
+        xhrFields: {
+            withCredentials: false,
+        },
         success: function(response) {
             console.log("Dados recebidos da API de cidades:", response);
             const citiesArray = response.data; 
@@ -292,8 +299,8 @@ function populateCitySelect() {
                 citySelect.append(optionHtml);
             });
         },
-        error: function() {
-            console.error('Erro ao carregar cidades para o formulário de avaliação.');
+        error: function(xhr, status, error) {
+            console.error('Erro ao carregar cidades:', xhr.responseText);
             citySelect.empty();
             citySelect.append('<option value="">Não foi possível carregar as cidades</option>');
         }
